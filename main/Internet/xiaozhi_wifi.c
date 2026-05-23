@@ -16,8 +16,6 @@ static EventGroupHandle_t s_wifi_event_group;
 
 void xiaozhi_wifi_init(void)
 {
-    //!提交测试
-    uint8_t wifi_init_flag = 0;
     // 存储器初始化
     xiaozhi_wifi_nvs_Init();
     // 创建事件标志组
@@ -31,8 +29,6 @@ void xiaozhi_wifi_init(void)
     //wifi初始化
     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
-
-    
 
 
     //注册回调函数
