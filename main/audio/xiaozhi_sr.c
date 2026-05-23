@@ -39,6 +39,7 @@ void xiaozhi_sr_init(void)
     afe_config->aec_init = false;
     // 禁用噪声消除
     afe_config->ns_init = false;
+    //！修改
 
     // 提升了唤醒的灵敏度
     afe_config->wakenet_mode = DET_MODE_90;
