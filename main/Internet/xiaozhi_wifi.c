@@ -18,6 +18,7 @@ void xiaozhi_wifi_init(void)
 {
     //!提交测试
     uint8_t wifi_init_flag = 0;
+    uint8_t wifi_init_retry = 0;
     // 存储器初始化
     xiaozhi_wifi_nvs_Init();
     // 创建事件标志组
